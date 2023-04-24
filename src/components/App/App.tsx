@@ -1,3 +1,9 @@
+import Button from "./Button/Button";
+
+const addAllGentleman = () => {
+  return;
+};
+
 const App = (): JSX.Element => {
   return (
     <div className="container">
@@ -6,9 +12,7 @@ const App = (): JSX.Element => {
       </header>
       <section className="controls">
         <p className="info">0 señores que te apuntan con el dedo marcados</p>
-        <button type="button" className="button button--select">
-          Marcar todos
-        </button>
+        <Button text="Marcar todos" actionOnClick={addAllGentleman} />
       </section>
       <main className="main">
         <ul className="gentlemen">
